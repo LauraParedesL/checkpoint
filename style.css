@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+    
+}
+
+header{
+    background-color: #E5B143;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    height: 12vh;
+}
+
+header h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6rem;
+    align-content: center;
+}
+
+nav a{
+    text-decoration: none;
+    color:rgb(66, 65, 65);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0.5rem;
+}
+
+nav a:hover{
+    transform: scale(1.0);
+    background-color:rgb(66, 65, 65);
+    color:#E5B143;
+    border-radius: 10px;
+    padding: 0.2rem;
+ }
+
+ /*main*/
+.section-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section-1 h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1rem;
+    font-size: 22px;
+}
+.main-imgs{
+    background-color: #E5B143;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 15px 15px 20px 10px rgba(0, 0, 0, 0.5);
+}
+ .main-imgs img{
+   width: 12rem;
+   object-fit: cover;
+ }
+
+ .main-imgs h3{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+ }
+
+ .main-imgs p{
+    width: 12rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+ }
+
+ .risotto{
+    height: 28vh;
+ }
+/*section 2*/
+
+.section-2{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.section-2 h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    margin: 1rem;
+    align-content: flex-start;
+}
+
+table, legend, tr, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding:0.5rem; 
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(66, 65, 65);
+ }
+
+ .table-title{
+    border: 1px solid white;
+ }
+
+ table th{
+    background-color: #E5B143;
+ }
+
+ .section-2 ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style-position: inside;
+    color: blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     gap:0.5rem;
+     margin: 0.5rem;
+ }
+
+ /*footer*/
+
+ footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    background-color: #E5B143;
+ }
+
+ footer h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.8rem;
+ }
+
+.form-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    border: 1px solid #E5B143;
+}
+
+footer fieldset{
+    border: 1px solid #E5B143;
+}
+
+.email{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.submit{
+    background-color: rgb(66, 65, 65);
+    color: #E5B143;
+    border-radius: 10px;
+    padding: 3px;
+    border: none;
+}
+
+footer a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(66, 65, 65) ;
+}
+
+/*media queries*/
+
+@media only screen and (min-width:320px) and (max-width:1023px){
+
+    header{
+        height: 8vh;
+        position: sticky;
+        top:0;
+    }
+
+    .risotto{
+        height: 16vh;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        height: 12vh;
+    }
+}
